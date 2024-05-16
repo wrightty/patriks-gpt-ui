@@ -34,62 +34,62 @@
           outputCost: 0.002,
           tokenLimit: 4097,
         });
-        break;
-      case "gpt-3.5-turbo-1106":
-        gptModel.set({
-          code: "gpt-3.5-turbo-1106",
-          name: "GPT 3.5 Turbo 16k (1106)",
-          inputCost: 0.001,
-          outputCost: 0.002,
-          tokenLimit: 16385,
-        });
-        break;
-      // gpt-3.5-turbo-0613  can be erased after June 27th
-      // as that is when the normal GPT 3.5 turbo will use the new model
-      case "gpt-3.5-turbo-0613":
-        gptModel.set({
-          code: "gpt-3.5-turbo-0613",
-          name: "GPT 3.5 Turbo 4k (0613)",
-          inputCost: 0.0015,
-          outputCost: 0.0015,
-          tokenLimit: 4096,
-        });
-        break;
-      case "gpt-3.5-turbo-16k":
-        gptModel.set({
-          code: "gpt-3.5-turbo-16k",
-          name: "GPT 3.5 Turbo 16k (0613)",
-          inputCost: 0.003,
-          outputCost: 0.004,
-          tokenLimit: 16384,
-        });
-        break;
-      case "gpt-4":
-        gptModel.set({
-          code: "gpt-4",
-          name: "GPT 4 8k",
-          inputCost: 0.03,
-          outputCost: 0.06,
-          tokenLimit: 8192,
-        });
-        break;
-      case "gpt-4-32k":
-        gptModel.set({
-          code: "gpt-4-32k",
-          name: "GPT 4 32k",
-          inputCost: 0.06,
-          outputCost: 0.12,
-          tokenLimit: 32768,
-        });
-        break;
-      case "gpt-4-1106-preview":
-        gptModel.set({
-          code: "gpt-4-1106-preview",
-          name: "GPT 4 Turbo 128k (1106)",
-          inputCost: 0.01,
-          outputCost: 0.03,
-          tokenLimit: 128000,
-        });
+    //     break;
+    //   case "gpt-3.5-turbo-1106":
+    //     gptModel.set({
+    //       code: "gpt-3.5-turbo-1106",
+    //       name: "GPT 3.5 Turbo 16k (1106)",
+    //       inputCost: 0.001,
+    //       outputCost: 0.002,
+    //       tokenLimit: 16385,
+    //     });
+    //     break;
+    //   // gpt-3.5-turbo-0613  can be erased after June 27th
+    //   // as that is when the normal GPT 3.5 turbo will use the new model
+    //   case "gpt-3.5-turbo-0613":
+    //     gptModel.set({
+    //       code: "gpt-3.5-turbo-0613",
+    //       name: "GPT 3.5 Turbo 4k (0613)",
+    //       inputCost: 0.0015,
+    //       outputCost: 0.0015,
+    //       tokenLimit: 4096,
+    //     });
+    //     break;
+    //   case "gpt-3.5-turbo-16k":
+    //     gptModel.set({
+    //       code: "gpt-3.5-turbo-16k",
+    //       name: "GPT 3.5 Turbo 16k (0613)",
+    //       inputCost: 0.003,
+    //       outputCost: 0.004,
+    //       tokenLimit: 16384,
+    //     });
+    //     break;
+    //   case "gpt-4":
+    //     gptModel.set({
+    //       code: "gpt-4",
+    //       name: "GPT 4 8k",
+    //       inputCost: 0.03,
+    //       outputCost: 0.06,
+    //       tokenLimit: 8192,
+    //     });
+    //     break;
+    //   case "gpt-4-32k":
+    //     gptModel.set({
+    //       code: "gpt-4-32k",
+    //       name: "GPT 4 32k",
+    //       inputCost: 0.06,
+    //       outputCost: 0.12,
+    //       tokenLimit: 32768,
+    //     });
+    //     break;
+    //   case "gpt-4-1106-preview":
+    //     gptModel.set({
+    //       code: "gpt-4-1106-preview",
+    //       name: "GPT 4 Turbo 128k (1106)",
+    //       inputCost: 0.01,
+    //       outputCost: 0.03,
+    //       tokenLimit: 128000,
+    //     });
     }
     streamMessages.set(messageTypeField === "true");
     apiKey.set(apiTextField);
